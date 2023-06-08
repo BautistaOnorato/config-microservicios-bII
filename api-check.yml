@@ -3,32 +3,13 @@ server:
 spring:
   application:
     name: api-check
-  datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/checkAgro-dev
-    username: usr-checkAgro
-    password: pwd-checkAgro
-
-  jpa:
-    generate-ddl: true
-    hibernate:
-      enable_lazy_load_no_trans: true
-      event:
-        merge:
-          entity_copy_observer: allow
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL55Dialect
-        format_sql: true
-    show-sql: false
-  # data:
-  #   mongodb:
-  #     username: usr-check-mongo
-  #     password: pwd-check-mongo
-  #     database: check-dev-mongo
-  #     port: 27017
-  #     host: localhost
+  data:
+    mongodb:
+      username: usr-inscription-mongo
+      password: pwd-inscription-mongo
+      database: inscription-dev-mongo
+      port: 27017
+      host: localhost
 
 info:
   application:
