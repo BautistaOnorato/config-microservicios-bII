@@ -4,10 +4,10 @@ spring:
   application:
     name: api-check
     datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/checkAgro-dev
-    username: usr-checkAgro
-    password: pwd-checkAgro
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3307/checkAgro-dev
+      username: usr-checkAgro
+      password: pwd-checkAgro
 
   jpa:
     generate-ddl: true
