@@ -5,9 +5,9 @@ spring:
     name: api-check
   data:
     mongodb:
-      username: usr-inscription-mongo
-      password: pwd-inscription-mongo
-      database: inscription-dev-mongo
+      username: usr-check-mongo
+      password: pwd-check-mongo
+      database: check-dev-mongo
       port: 27017
       host: localhost
 
