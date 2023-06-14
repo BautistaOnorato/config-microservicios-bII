@@ -64,7 +64,7 @@ resilience4j:
           max-retry-attempts: 5
           wait-duration: 2s
           retry-exceptions:
-            - java.net.ConnectException
+            - feign.FeignException$InternalServerError
 
   circuitbreaker:
     configs:
