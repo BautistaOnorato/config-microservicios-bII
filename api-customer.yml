@@ -65,6 +65,7 @@ resilience4j:
           wait-duration: 2s
           retry-exceptions:
             - feign.FeignException$InternalServerError
+            - o.s.c.l.core.RoundRobinLoadBalancer
 
   circuitbreaker:
     configs:
