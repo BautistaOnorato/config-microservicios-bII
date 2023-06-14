@@ -37,6 +37,18 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: circuitbreakers, circuitbreakerevents, health, info, ratelimiters, metrics
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
+
 resilience4j:
   retry:
     configs:
@@ -53,7 +65,7 @@ resilience4j:
           wait-duration: 2s
           retry-exceptions:
             - java.net.ConnectException
-            
+
   circuitbreaker:
     configs:
       default:
