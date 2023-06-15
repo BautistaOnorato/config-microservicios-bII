@@ -10,7 +10,10 @@ spring:
       database: "check-dev-mongo"
       port: 27017
       host: localhost
-
+      security:
+        auth:
+          mongo:
+            mechanism: SCRAM-SHA-1
 info:
   application:
     name: api-check
