@@ -5,6 +5,7 @@ spring:
     name: api-check
   data:
     mongodb:
+      authentication-database: usr-check-mongo
       username: usr-check-mongo
       password: pwd-check-mongo
       database: check-dev-mongo
